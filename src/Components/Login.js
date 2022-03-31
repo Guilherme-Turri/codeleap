@@ -7,7 +7,8 @@ const Login = () => {
   function handleClick() {
     if (name !== '') {
       localStorage.setItem('post', JSON.stringify(Data));
-      window.location.href = `http://localhost:3000/home/${name}`;
+      const location = window.location.href;
+      window.location.href = `${location}home/${name}`;
     }
   }
   function handleKey(e) {
