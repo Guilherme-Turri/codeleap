@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  z-index: 1;
+}
+.pop {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  height: 100px;
+  margin-top: 115px;
+  padding-left: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.btn button {
+  margin-right: 5px;
+}

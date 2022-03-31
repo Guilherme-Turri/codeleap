@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+}
+
+.box {
+  display: flex;
+  padding-left: 34px;
+  border: 1px solid #999999;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 31px;
+  color: #999999;
+}
+
+.first {
+  padding-top: 25px;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animeLeft 0.63s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.header {
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  padding-left: 35px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.header div {
+  margin-right: 25px;
+}
+
+.actions {
+  display: flex;
+}
+.update {
+  cursor: pointer;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.delete img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.update img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  padding-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 35rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}

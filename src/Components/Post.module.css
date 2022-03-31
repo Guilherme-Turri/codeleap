@@ -1,0 +1,31 @@
+.container {
+  width: 50rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.box {
+  display: flex;
+  padding-left: 34px;
+  border: 1px solid #999999;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 31px;
+  color: #999999;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 35rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}

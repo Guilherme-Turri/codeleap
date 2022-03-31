@@ -1,0 +1,70 @@
+.login {
+  background-color: #dddddd;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
+
+.box {
+  width: 31.25rem;
+  height: 13.75rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 31px;
+}
+
+.title {
+  padding-top: 28px;
+  font-size: 1.375 rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.625 rem;
+  letter-spacing: 0em;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 31px;
+  margin-bottom: 2px;
+  justify-content: center;
+  line-height: 18.75px;
+}
+
+input {
+  margin-right: 25px;
+  margin-top: 13px;
+}
+
+.avalibe {
+  margin-right: 25px;
+  margin-top: 13px;
+  background-color: BLACK;
+  color: white;
+  border: none;
+  width: 25%;
+  align-items: flex-end;
+  font-weight: bold;
+  align-self: flex-end;
+  height: 33px;
+  line-height: 18.75px;
+  cursor: pointer;
+}
+
+.notAvalibe {
+  margin-right: 25px;
+  margin-top: 13px;
+  background-color: grey;
+  color: white;
+  border: none;
+  width: 25%;
+  align-items: flex-end;
+  font-weight: bold;
+  align-self: flex-end;
+  height: 33px;
+  line-height: 18.75px;
+  cursor: default;
+}

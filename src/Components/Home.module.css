@@ -1,0 +1,15 @@
+.container {
+  width: 50rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 35rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,69 @@
+.container {
+  width: 50rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  padding-left: 35px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.box {
+  padding-left: 34px;
+  border: 1px solid #999999;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.avalible {
+  margin-right: 25px;
+  margin-top: 13px;
+  background-color: BLACK;
+  color: white;
+  border: none;
+  width: 25%;
+  font-weight: bold;
+  height: 33px;
+  line-height: 18.75px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.notAvalible {
+  margin-right: 25px;
+  margin-top: 13px;
+  background-color: grey;
+  color: white;
+  border: none;
+  width: 25%;
+  font-weight: bold;
+  height: 33px;
+  line-height: 18.75px;
+  cursor: default;
+}
+
+textarea {
+  width: 100%;
+}
+input {
+  width: 100%;
+}
+
+.data {
+  margin-right: 25px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 35rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
