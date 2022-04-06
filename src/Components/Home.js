@@ -28,7 +28,7 @@ const Home = () => {
               {myData
                 .map((item, index) => (
                   <div key={index}>
-                    <NewPost id={index} {...item} />{' '}
+                    <NewPost key={index} id={index} {...item} />{' '}
                   </div>
                 ))
                 .reverse()}
@@ -39,7 +39,7 @@ const Home = () => {
         </div>
         {userData.map((item) => (
           <div key={item.id}>
-            <Post {...item} />
+            <Post key={item} {...item} />
           </div>
         ))}
       </div>

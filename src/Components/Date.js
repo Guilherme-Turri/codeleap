@@ -31,7 +31,9 @@ const Date = ({ date }) => {
       diffDate >= 7200000 &&
       oldDate.getDay() !== actualDate.getDay()
     ) {
-      number = actualDate.getDay() - oldDate.getDay();
+      number = Math.ceil(
+        Math.abs(actualDate - oldDate) / (1000 * 60 * 60 * 24),
+      );
       string = ' days ago';
     }
   }
