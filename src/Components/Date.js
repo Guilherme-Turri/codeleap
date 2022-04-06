@@ -22,24 +22,25 @@ const Date = ({ date }) => {
       string = ' minutes ago';
     } else if (
       diffDate >= 3600000 &&
-      diffDate >= 7200000 &&
-      oldDate.getDay() === actualDate.getDay()
+      diffDate <= 86400000 &&
+      oldDate.getDay() !== actualDate.getDay()
     ) {
       number = Math.floor(diffDate / 1000 / 60 / 60) % 24;
       string = ' hours ago ';
     } else if (
+      diffDate >= 3600000 &&
       diffDate >= 7200000 &&
       oldDate.getDay() !== actualDate.getDay()
     ) {
       number = Math.ceil(
-        Math.abs(actualDate - oldDate) / (1000 * 60 * 60 * 24),
+        Math.abs(oldDate - actualDate) / (1000 * 60 * 60 * 24),
       );
       string = ' days ago';
     }
   }
 
   setDate();
-
+  console.log(number);
   return (
     <div className={styles.container}>
       <div className={styles.date}>
